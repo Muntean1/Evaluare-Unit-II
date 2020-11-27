@@ -1,0 +1,175 @@
+<!doctype html>
+  <html>
+    <head>
+	   <title> Profilul Meu </title>
+	   <style>
+	        body {background-color: white;}
+          h1 {border: 4px solid black;
+		      border-radius: 0px;
+			  display: block;
+			  margin: left;
+			  background-color:rgb(165,85,159);
+			  color: rgb(214,66,36);}
+          p {color: yellow}
+		  a {color: yellow}
+		  h2 {color: rgb(64,64,64);}
+         
+		 h3 {color: rgb(64,64,64);}
+		 h4 {color: rgb(64,64,64);}
+		 h5 {color: rgb(64,64,64);
+		     font-size: 30px;}
+		 b    {display: block;
+		      border: 2px color: rgb(200,27,229);
+		      background-color: rgb(129,121,123);
+			  margin: 30px;
+			  padding: 50px;
+			  position:middle;}
+    
+         i {display: block;
+		      border: 2px color: rgb(200,27,229);
+		      background-color: rgb(49,132,155);
+			  margin: 30px;
+			  padding-left: 70px;
+			  padding-top: 30px;
+			  position: center;
+			  length: 1000px;
+			
+            }			
+          table, tr, td {border: 4px solid orange;}
+          
+
+          h1 {font-family: "Ariel Black";
+             font-style: italic;
+			 font-style: bold;
+             font-size: 36px;}
+	      p {font-family: "Ariel Black";
+		    font-style: italic;
+			font-size: 18px;
+			text-align: right;}
+		  h2 {font-family: "Ariel Black";
+		      font-style: italic;
+			  font-size: 18px;
+			  text-align: right;}
+		  h3 {font-family: "Ariel Black";
+		      font-style: italic;
+			  text-align: center;}
+		  table, tr, td, ul {font-family: "Ariel Black";
+		                     font-style: italic;
+							 font-size: 20px;
+							 }
+		  
+		  img {image-align: center;
+			  width: 400px;
+			  display: block;
+			  padding-left: 400px;
+			  margin: left;
+			  opacity: 1;
+			  image-align: middle;}
+	       
+		</style>
+	</head>
+	    <body>
+		  <div>
+			    
+				<h1> Muntean Vasile Costel </h1>
+				
+				<p> E-mail: <a href=""> muntean.tu.vasile@utcluj.didatec.ro </a> </p>
+				
+				<h2> Specificatii tehnice ale statiei principale de lucru </h2>
+				
+				<table>
+				    <table style="float:right">
+					<tr>
+					    <th> Denumire componente </th>
+						<br>
+						<th> Producator </th>
+						<br>
+						<th> Parametri </th>
+					</tr>
+					
+					<tr>
+					    <td> Intel Celeron CPU N3050 </td>
+						<td> Intel </td>
+						<td> 1.60GHz</td>
+					</tr>
+					
+					<tr>
+					    <td> HP Web Cam </td>
+						<td> HP </td>
+						<td> Rezoltie: Full HD 1080p</td>
+					</tr>
+					
+					<tr>
+					    <td> Realtek High Definition Audio</td>
+						<td> Realtek </td>
+						<td> Suported System: W10,W8 </td>
+					</tr>
+					
+				</table>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				</div>
+				<br>
+				<div>
+				
+				<b>
+			   
+
+			    <h3> Structura retelei personale si accesul la internet </h3>
+				<img src="retea.png" width="600px" alt="eroare!! fara imagine">
+				
+				<h4> Caracterisiticile conexiunii la retea </h4>
+				
+				<li>I.    Adresa MAC: 44-1C-A8-E7-CF-87 </p>
+				<li>II.   Adresa IP: 192.168.5.101 </p>
+				<li>III.  Debit la download: 43 Mbps </p>
+				<li>IV.   Debit la upload: 42.1 Mbps </p>
+				
+				</b>
+				
+				<h5> Utilizarea resurselor </h5>
+				<i>
+				<div class="w3-content w3-display-container">
+  <img class="mySlides" src="utilizare1.png" width="10px">
+  <img class="mySlides" src="utilizare2.png" width="10px">
+  <img class="mySlides" src="utilizare3.png" width="10px">
+  <div class="w3-center w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  </div>
+  
+</div>
+				
+			</i>
+		</div>
+	      </div>
+		<script>
+		var slideIndex= 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 3 seconds
+}
+</script>
+		</body>
+  </html>
